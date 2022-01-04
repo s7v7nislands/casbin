@@ -541,7 +541,7 @@ func (r *Role) toString() string {
 }
 
 func (r *Role) getRoles() []string {
-	names := []string{}
+	names := []string{r.name}
 	for _, role := range r.roles {
 		names = append(names, role.name)
 	}
